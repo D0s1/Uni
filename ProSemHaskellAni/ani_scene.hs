@@ -45,7 +45,7 @@ sky time = translate (150) (75)$color (skycolor time) $ rectangleSolid 300 150
 grassbundle :: Color -> Float -> Picture
 grassbundle gcolor time
           = let grassbit 
-                       = rotate (4*sin (time)) $ color gcolor $ Polygon[(2,0), (1,15), (1,15), (-2,0)]
+                       = rotate (4*sin (time)) $ color gcolor $ Polygon[(2,0), (1,15), (-2,0)]
             in Pictures[rotate (-45) $ grassbit
                         , rotate (-23) $ grassbit
                         , grassbit
